@@ -2,21 +2,28 @@
 {% block content %}
 <div class="container-fluid text-center" style="width: 540px; margin-left:auto; margin-right:auto;">
 	<article>
-		<h1 class="text-dark">Kacper Aleksander</h1>
-		<h1 class="text-info">Antoni Borkowski</h1>
-		<div class="text-muted">VIII LO Poznań</div>
+		<h1><span class="text-dark">Kacper</span><span class="text-info"> Aleksander</span></h1>
+		<h1><span class="text-info">Antoni</span><span class="text-dark"> Borkowski</span></h1>
 	</article>
 
 	<article class="mt-5">
 		<h3 class="text-dark">Nasze projekty:</h3>
+
 		<section class="text-center">
+
 		<a href="{% url 'todolist-home' %}" class="btn btn-lg btn-outline-danger mt-3">Projekt nr. 1</a >
+
 		<a href="{% url 'register' %}" class="btn btn-lg btn-outline-warning ml-2 mt-3">Projekt nr. 2</a >
+
 		<a href="#" class="btn btn-lg btn-outline-success ml-2 mt-3">Projekt nr. 3</a>
+
 		<a href="#" class="btn btn-lg btn-outline-info mt-3">Projekt nr. 4</a >
+		
 		<a href="#" class="btn btn-lg btn-outline-primary ml-2 mt-3">Projekt nr. 5</a >
 		<a href="#" class="btn btn-lg btn-outline-dark ml-2 mt-3">Projekt nr. 6</a >
+
 		</section>
+
 	</article>
 
 

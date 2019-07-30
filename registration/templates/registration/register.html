@@ -10,9 +10,10 @@
 		{% csrf_token %}
 		{{form|crispy}}
 		<section class="mt-4">
-			<a href="{% url 'home' %}" class="btn btn-lg btn-outline-dark">Powrót</a>
+			<a href="{% url 'todolist-home' %}" class="btn btn-lg btn-light ml-1"><</a>
+			<a href="{% url 'home' %}" class="btn btn-lg btn-outline-dark">Projekty</a>
 			<button type="submit" class="btn btn-lg btn-warning ml-1">Zarejestruj się</button>
-			<a href="#" class="btn btn-lg btn-outline-success ml-1">Następny projekt</a>
+			<a href="#" class="btn btn-lg btn-light ml-1">></a>
 		</section>
 	</form>
 
