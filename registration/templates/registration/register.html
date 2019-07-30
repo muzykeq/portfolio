@@ -1,6 +1,21 @@
 {% extends "mainpage/base.html" %}
+{% load crispy_forms_tags %}
 {% block content %}
 	<h1 class="text-dark">Strona rejestracji</h1>
 	<h5 class="text-muted">w budowie</h5>
-	<a href="{% url 'home' %}" class="btn btn-lg btn-warning mt-3">Powrót</a>
+
+	<hr>
+
+	<form method="POST" class="mt-5 mb-5">
+		{% csrf_token %}
+		{{form|crispy}}
+		<section class="mt-4">
+			<a href="{% url 'home' %}" class="btn btn-lg btn-outline-dark">Powrót</a>
+			<button type="submit" class="btn btn-lg btn-warning ml-1">Zarejestruj się</button>
+		</section>
+	</form>
+
+	<hr>
+
+	Masz już konto? <a href="#" class="text-warning">Zaloguj się</a><br/>
 {% endblock content %}

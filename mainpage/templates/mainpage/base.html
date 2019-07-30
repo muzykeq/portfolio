@@ -5,7 +5,14 @@
 	<title></title>
 </head>
 <body>
-<div class="container-fluid mt-5" style="width: 720px; margin-left:auto; margin-right:auto;">
+<div class="container-fluid mt-5 mb-5" style="width: 720px; margin-left:auto; margin-right:auto;">
+	{% if messages %}
+		{% for message in messages  %}
+			<div class="alert alert-{{message.tags}} mb-5" role="alert">
+				{{message}}
+			</div>
+		{% endfor %}
+	{% endif %}
 {% block content %}
 	
 {% endblock content %}
