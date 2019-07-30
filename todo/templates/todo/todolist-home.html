@@ -2,5 +2,10 @@
 {% block content %}
 	<h1 class="text-dark">Todo lista</h1>
 	<h5 class="text-muted">w budowie</h5>
-	<a href="{% url 'home' %}" class="btn btn-lg btn-danger mt-3">Powrót</a>
+	<hr>
+	<input type="text" name="">
+	<button type="submit" class="btn btn-sm btn-light ml-1">Dodaj zadanie</button><br/>
+	<a href="{% url 'home' %}" class="btn btn-lg btn-outline-dark mt-3">Powrót</a>
+	<button type="submit" class="btn btn-lg btn-danger ml-1 mt-3">Wyczyść wszystko</button>
+			<a href="{% url 'register' %}" class="btn btn-lg btn-outline-warning ml-1 mt-3">Następny projekt</a>
 {% endblock content %}
