@@ -17,9 +17,12 @@ from django.contrib import admin
 from django.urls import path
 from mainpage import views as mainpage_views
 from todo import views as todo_views
+from registration import views as registration_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('home/', mainpage_views.Home, name="home"),
     path('', mainpage_views.Home, name="home"),
     path('todo/', todo_views.TodolistHome, name="todolist-home"),
+    path('register/', registration_views.Register, name="register"),
 ]
